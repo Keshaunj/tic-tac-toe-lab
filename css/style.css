@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(91, 37, 37);
+  /* Use a system font, if none are available use an available sans-sarif */
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.board {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  width: 650px;
+  height: 650px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin: 0 auto;
+  border: 100px outset #c39a53; /* thickness of outer layer of grid*/
+  border-radius: 8px; /* amount of curve on the corners of grid*/
+  background-image: url('https://as2.ftcdn.net/v2/jpg/05/24/62/89/1000_F_524628940_2GyJrzwTNvyVlCFoMT8m35ko0uo2Zse5.jpg');
+  background-size: cover; /* Ensure the image covers the entire board */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+
+}
+
+.sqr {
+  /*width:30%*/ /* was not working with the width 30% delted that*/
+  /*aspect-ratio: 1/1;*/
+  border: 20px ridge rgb(198, 164, 119);
+  font-size: 64px;
+  text-align: center;
+  align-items: center;
+  display: inline-grid;
+  /*<--its werid because align-items:center doesnt wor kwithout   
+   display: inline-grid;*/
+}
+
+
+h1{
+text-align: center;
+font-family: 'Eater', cursive;
+font-size: 55px;
+}
+h2{
+text-align: center;
+font-family: 'Eater', cursive;
+font-size: 55px;
+}
+
+.first{
+  color:orange
+}
+
+#message {
+  color:darkgreen
+}
+#A,#B,#C,#D,#E,#F,#G,#H,#I,#J{
+  font-family: 'Eater', cursive;
+font-size: 64px;
+}
+/* add cool halloween themed pic before sumbit/last commit-----notes for me-----*/
+
+/*.sqr.x{
+  color: teal;
