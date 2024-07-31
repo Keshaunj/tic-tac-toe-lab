@@ -15,11 +15,11 @@ body {
   margin: 0 auto;
   border: 100px outset #c39a53; /* thickness of outer layer of grid*/
   border-radius: 8px; /* amount of curve on the corners of grid*/
-  background-image: url('https://as2.ftcdn.net/v2/jpg/05/24/62/89/1000_F_524628940_2GyJrzwTNvyVlCFoMT8m35ko0uo2Zse5.jpg');
-  background-size: cover; /* Ensure the image covers the entire board */
+  background-image: url("https://as2.ftcdn.net/v2/jpg/05/24/62/89/1000_F_524628940_2GyJrzwTNvyVlCFoMT8m35ko0uo2Zse5.jpg");
+  background-size: cover; /*  the image covers the entire board */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-
+  background-repeat: no-repeat; /* stop the image from repeating */
+  
 }
 
 .sqr {
@@ -30,34 +30,61 @@ body {
   text-align: center;
   align-items: center;
   display: inline-grid;
+  cursor: cell;
   /*<--its werid because align-items:center doesnt wor kwithout   
    display: inline-grid;*/
 }
 
-
-h1{
-text-align: center;
-font-family: 'Eater', cursive;
-font-size: 55px;
+h1 {
+  text-align: center;
+  font-family: "Eater", cursive;
+  font-size: 55px;
 }
-h2{
-text-align: center;
-font-family: 'Eater', cursive;
-font-size: 55px;
+h2 {
+  text-align: center;
+  font-family: "Eater", cursive;
+  font-size: 55px;
 }
 
-.first{
-  color:orange
+.first {
+  color: orange;
 }
 
 #message {
-  color:darkgreen
+  color: rgb(51, 210, 51);
 }
-#A,#B,#C,#D,#E,#F,#G,#H,#I,#J{
-  font-family: 'Eater', cursive;
-font-size: 64px;
-}
-/* add cool halloween themed pic before sumbit/last commit-----notes for me-----*/
 
-/*.sqr.x{
-  color: teal;
+/* learne that nth-child is a pseudo style for css that targets postion within elements*/
+.sqr:nth-child(odd) {
+  color: #7fff00;
+  font-family: "Eater", cursive;
+  font-size: 64px;
+}
+
+.sqr:nth-child(even) {
+  color: orange;
+  font-family: "Eater", cursive;
+  font-size: 64px;
+}
+
+#restartBtn {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 10px;
+}
+  /* add cool halloween themed pic before sumbit/last commit-----notes for me-----*/
+  
+
+              
+.sqr.x{
+  color: rgb(66, 226, 226)
+}
+.sqr.o{
+  color: red
+}
+/*#1{
+  color: #7fff00;    <------------ doesnt work found another method
+}*/
