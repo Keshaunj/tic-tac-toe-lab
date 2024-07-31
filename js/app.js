@@ -111,7 +111,7 @@ function updateBoard() {
 /*----------------------------- Event Listeners -----------------------------*/
 
 // Initialize the game when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
+
   init(); // Call init to set up the game
 
   // Add event listeners to squares
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
 
-});
+
  function updateBoard() {
   board.forEach((element, index) => {
     const square = squareEls[index];
